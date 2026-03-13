@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Text Change</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex items-center justify-center h-screen bg-gray-100">
+<body class="bg-gray-200 h-screen">
 
-  <div class="text-center">
-    <p id="text" class="text-xl font-semibold mb-4">
-      Hello World
-    </p>
-
-    <button 
-      onclick="changeText()" 
-      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-      Change Text
-    </button>
-  </div>
-
-  <script>
-    function changeText(){
-      document.getElementById("text").innerText = "Text Changed Successfully!";
-    }
-  </script>
-
+      <div class="flex flex-col justify-center items-center h-screen">
+        <p id="text" class="text-green-700 font-bold text-xl">
+          Click me to change color
+        </p>
+         <button onclick="changetext()"
+         class="border-2 text-white bg-blue-700 border-blue-300 rounded-lg p-2">
+         click me 
+        </button>
+        
+</div>
+     
+     <script src="index.js"></script>
 </body>
-</html>
+</html> 
