@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Change</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+  <div class="text-center">
+    <p id="text" class="text-xl font-semibold mb-4">
+      Hello World
+    </p>
+
+    <button 
+      onclick="changeText()" 
+      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      Change Text
+    </button>
+  </div>
+
+  <script>
+    function changeText(){
+      document.getElementById("text").innerText = "Text Changed Successfully!";
+    }
+  </script>
+
+</body>
+</html>
