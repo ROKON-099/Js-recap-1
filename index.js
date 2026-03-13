@@ -7,3 +7,9 @@ function increment(){
   number++;
   document.getElementById("count").innerText = number;
 }
+
+
+function increase(run){
+    let score = document.getElementById("score");
+    score.innerText = Number(score.innerText) + run;
+}
